@@ -74,5 +74,21 @@ Additional test messages (unseen data) were also passed through the model to val
 
 ---
 
+## Files in This Repository
 
----
+### sms_spam_classifier.ipynb  
+The main notebook containing the complete implementation of an SMS spam detection model using machine learning. It includes preprocessing, EDA, feature extraction, model training, evaluation, and improvements with additional synthetic spam messages.
+
+### images/  
+EDA plots and evaluation visuals:
+- EDA 1: Distribution of Spam vs Ham (`output_image_1.png`)
+- EDA 2: Distribution of Message Lengths Ham vs  Spam (`output_image_2.png`)
+- EDA 3: Top 10 Classifier-Vectorizer Combinations by Accuracy (`output_image_3.png`)
+- EDA 4: Confusion Matrix Heatmap (`output_image_4.png`)
+- EDA 5: Classification Report Heatmap (`output_image_5.png`)
+
+### models/  
+Serialized components for model reuse and deployment:
+- `best_model.pkl`: Best Model
+- `best_vectorizer.pkl`: Best Vectorizer
+- `preprocess_function.pkl`: Function used to clean and preprocess incoming messages
